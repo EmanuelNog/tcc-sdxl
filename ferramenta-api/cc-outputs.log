@@ -1,0 +1,233 @@
+2024-10-24 11:51:34,618 : [WARN]  pt_BR not supported. defaulting to English
+2024-10-24 11:51:34,618 : please specify atleast one file to convert
+2024-10-24 11:51:34,618 : Usage: colab-convert <input file> <output file> <extra flags>
+2024-10-24 11:51:38,706 : [WARN]  pt_BR not supported. defaulting to English
+2024-10-24 11:51:38,707 : help message called
+2024-10-24 11:54:09,437 : [WARN]  pt_BR not supported. defaulting to English
+2024-10-24 11:54:09,437 : [OK]   convert magic commands
+2024-10-24 11:54:09,438 : [OK]   commenting out unsupported magic commands
+2024-10-24 11:54:09,438 : [OK]   keeping new imports made by converter
+2024-10-24 11:54:09,438 : [NOT]  showing outputs from converter
+2024-10-24 11:54:09,438 : [WARN] %cd command detected
+2024-10-24 11:54:09,438 : [WARN] converted:
+    %cd /content
+  to:
+    os.chdir('/content')
+
+2024-10-24 11:54:09,438 : [WARN] !pip command detected
+2024-10-24 11:54:09,438 : [WARN] converted:
+    !pip install dadaptation==3.1 diffusers[torch]==0.17.1 easygui==0.98.3 einops==0.6.0 fairscale==0.4.13 ftfy==6.1.1 gradio==3.36.1 huggingface-hub==0.14.1
+  to:
+    sub_p_res = subprocess.run(['pip', 'install', 'dadaptation==3.1', 'diffusers[torch]==0.17.1', 'easygui==0.98.3', 'einops==0.6.0', 'fairscale==0.4.13', 'ftfy==6.1.1', 'gradio==3.36.1', 'huggingface-hub==0.14.1'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,438 : [WARN] !pip command detected
+2024-10-24 11:54:09,438 : [WARN] converted:
+    !pip install lion-pytorch==0.0.6 lycoris_lora==1.8.0.dev6 open-clip-torch==2.20.0 prodigyopt==1.0 pytorch-lightning==1.9.0 safetensors==0.3.1 timm==0.6.12
+  to:
+    sub_p_res = subprocess.run(['pip', 'install', 'lion-pytorch==0.0.6', 'lycoris_lora==1.8.0.dev6', 'open-clip-torch==2.20.0', 'prodigyopt==1.0', 'pytorch-lightning==1.9.0', 'safetensors==0.3.1', 'timm==0.6.12'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] !pip command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    !pip install tk==0.1.0 transformers==4.30.2 voluptuous==0.13.1 wandb==0.15.0 xformers==0.0.20 omegaconf
+  to:
+    sub_p_res = subprocess.run(['pip', 'install', 'tk==0.1.0', 'transformers==4.30.2', 'voluptuous==0.13.1', 'wandb==0.15.0', 'xformers==0.0.20', 'omegaconf'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] %cd command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    %cd /content
+  to:
+    os.chdir('/content')
+
+2024-10-24 11:54:09,439 : [WARN] !git command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    !git clone -b 0.41.0 https://github.com/TimDettmers/bitsandbytes
+  to:
+    sub_p_res = subprocess.run(['git', 'clone', '-b', '0.41.0', 'https://github.com/TimDettmers/bitsandbytes'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] %cd command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    %cd /content/bitsandbytes
+  to:
+    os.chdir('/content/bitsandbytes')
+
+2024-10-24 11:54:09,439 : [WARN] !CUDA_VERSION=118 command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    !CUDA_VERSION=118 make cuda11x
+  to:
+    sub_p_res = subprocess.run(['CUDA_VERSION=118', 'make', 'cuda11x'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] !python command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    !python setup.py install
+  to:
+    sub_p_res = subprocess.run(['python', 'setup.py', 'install'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] %cd command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    %cd /content
+  to:
+    os.chdir('/content')
+
+2024-10-24 11:54:09,439 : [WARN] !git command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    !git clone -b v1.0 https://github.com/camenduru/kohya_ss
+  to:
+    sub_p_res = subprocess.run(['git', 'clone', '-b', 'v1.0', 'https://github.com/camenduru/kohya_ss'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] %cd command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    %cd /content/kohya_ss
+  to:
+    os.chdir('/content/kohya_ss')
+
+2024-10-24 11:54:09,439 : [WARN] !python command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    !python kohya_gui.py --share --headless  to:
+    sub_p_res = subprocess.run(['python', 'kohya_gui.py', '--share', '--headles'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] !wget command detected
+2024-10-24 11:54:09,439 : [WARN] converted:
+    !wget -q https://raw.githubusercontent.com/huggingface/diffusers/v0.17.1/scripts/convert_original_stable_diffusion_to_diffusers.py
+  to:
+    sub_p_res = subprocess.run(['wget', '-q', 'https://raw.githubusercontent.com/huggingface/diffusers/v0.17.1/scripts/convert_original_stable_diffusion_to_diffusers.py'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,439 : [WARN] !wget command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !wget {from_safetensors_url} -O /content/model.safetensors
+  to:
+    sub_p_res = subprocess.run(['wget', '{from_safetensors_url}', '-O', '/content/model.safetensors'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !python3 command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !python3 convert_original_stable_diffusion_to_diffusers.py --half --from_safetensors --checkpoint_path model.safetensors --dump_path /content/model  to:
+    sub_p_res = subprocess.run(['python3', 'convert_original_stable_diffusion_to_diffusers.py', '--half', '--from_safetensors', '--checkpoint_path', 'model.safetensors', '--dump_path', '/content/mode'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] %cd command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    %cd /content
+  to:
+    os.chdir('/content')
+
+2024-10-24 11:54:09,440 : [WARN] %env command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    %env TF_CPP_MIN_LOG_LEVEL=1
+  to:
+    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
+
+2024-10-24 11:54:09,440 : [WARN] !apt command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !apt -y update -qq
+  to:
+    sub_p_res = subprocess.run(['apt', '-y', 'update', '-qq'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !wget command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !wget https://github.com/camenduru/gperftools/releases/download/v1.0/libtcmalloc_minimal.so.4 -O /content/libtcmalloc_minimal.so.4
+  to:
+    sub_p_res = subprocess.run(['wget', 'https://github.com/camenduru/gperftools/releases/download/v1.0/libtcmalloc_minimal.so.4', '-O', '/content/libtcmalloc_minimal.so.4'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] %env command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    %env LD_PRELOAD=/content/libtcmalloc_minimal.so.4
+  to:
+    os.environ['LD_PRELOAD'] = '/content/libtcmalloc_minimal.so.4'
+
+2024-10-24 11:54:09,440 : [WARN] !apt command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !apt -y install -qq aria2 libcairo2-dev pkg-config python3-dev
+  to:
+    sub_p_res = subprocess.run(['apt', '-y', 'install', '-qq', 'aria2', 'libcairo2-dev', 'pkg-config', 'python3-dev'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !pip command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !pip install -q xformers==0.0.20 triton==2.0.0 -U
+  to:
+    sub_p_res = subprocess.run(['pip', 'install', '-q', 'xformers==0.0.20', 'triton==2.0.0', '-U'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !git command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !git clone -b v2.5 https://dagshub.com/camenduru/ui
+  to:
+    sub_p_res = subprocess.run(['git', 'clone', '-b', 'v2.5', 'https://dagshub.com/camenduru/ui'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !git command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !git clone https://github.com/camenduru/tunnels /content/ui/extensions/tunnels
+  to:
+    sub_p_res = subprocess.run(['git', 'clone', 'https://github.com/camenduru/tunnels', '/content/ui/extensions/tunnels'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] %cd command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    %cd /content/ui
+  to:
+    os.chdir('/content/ui')
+
+2024-10-24 11:54:09,440 : [WARN] !cp command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !cp {model} /content/ui/models/Stable-diffusion
+  to:
+    sub_p_res = subprocess.run(['cp', '{model}', '/content/ui/models/Stable-diffusion'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !sed command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !sed -i -e '''/from modules import launch_utils/a\import os''' /content/ui/launch.py
+  to:
+    sub_p_res = subprocess.run(['sed', '-i', '-e', "'''/from", 'modules', 'import', 'launch_utils/a\\import', "os'''", '/content/ui/launch.py'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !sed command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !sed -i -e '''/        prepare_environment()/a\        os.system\(f\"""sed -i -e ''\"s/dict()))/dict())).cuda()/g\"'' /content/ui/repositories/stable-diffusion-stability-ai/ldm/util.py""")''' /content/ui/launch.py
+  to:
+    sub_p_res = subprocess.run(['sed', '-i', '-e', "'''/", '', '', '', '', '', '', '', 'prepare_environment()/a\\', '', '', '', '', '', '', '', 'os.system\\(f\\"""sed', '-i', '-e', '\'\'\\"s/dict()))/dict())).cuda()/g\\"\'\'', '/content/ui/repositories/stable-diffusion-stability-ai/ldm/util.py""")\'\'\'', '/content/ui/launch.py'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,440 : [WARN] !sed command detected
+2024-10-24 11:54:09,440 : [WARN] converted:
+    !sed -i -e 's/\["sd_model_checkpoint"\]/\["sd_model_checkpoint","sd_vae","CLIP_stop_at_last_layers"\]/g' /content/ui/modules/shared.py
+  to:
+    sub_p_res = subprocess.run(['sed', '-i', '-e', '\'s/\\["sd_model_checkpoint"\\]/\\["sd_model_checkpoint","sd_vae","CLIP_stop_at_last_layers"\\]/g\'', '/content/ui/modules/shared.py'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,441 : [WARN] !python command detected
+2024-10-24 11:54:09,441 : [WARN] converted:
+    !python launch.py --listen --xformers --enable-insecure-extension-access --theme dark --gradio-queue --multiple  to:
+    sub_p_res = subprocess.run(['python', 'launch.py', '--listen', '--xformers', '--enable-insecure-extension-access', '--theme', 'dark', '--gradio-queue', '--multipl'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,441 : [WARN] !pip command detected
+2024-10-24 11:54:09,441 : [WARN] converted:
+    !pip -q install dagshub
+  to:
+    sub_p_res = subprocess.run(['pip', '-q', 'install', 'dagshub'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+    print(sub_p_res)
+
+2024-10-24 11:54:09,441 : [WARN] adding new imports to the top of the file
+  # %%
+  # !! {"metadata":{
+  # !!   "id":"cc-imports"
+  # !! }}
+  
+  #<cc-imports>
+  
+  import os
+  import subprocess
+  

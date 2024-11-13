@@ -1,0 +1,102 @@
+{
+  "3": {
+    "inputs": {
+      "image": "Back_Pain.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "5": {
+    "inputs": {
+      "width": 344,
+      "height": 344,
+      "position": "top-center",
+      "x_offset": 0,
+      "y_offset": 0,
+      "image": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "ImageCrop+",
+    "_meta": {
+      "title": "🔧 Image Crop"
+    }
+  },
+  "8": {
+    "inputs": {
+      "width": 312,
+      "height": 312,
+      "position": "bottom-center",
+      "x_offset": 0,
+      "y_offset": 0,
+      "image": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "ImageCrop+",
+    "_meta": {
+      "title": "🔧 Image Crop"
+    }
+  },
+  "11": {
+    "inputs": {
+      "upscale_model": [
+        "12",
+        0
+      ],
+      "image": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "ImageUpscaleWithModel",
+    "_meta": {
+      "title": "Upscale Image (using Model)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "model_name": "RealESRGAN_x4.pth"
+    },
+    "class_type": "UpscaleModelLoader",
+    "_meta": {
+      "title": "Load Upscale Model"
+    }
+  },
+  "14": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "interpolation": "bilinear",
+      "method": "fill / crop",
+      "condition": "always",
+      "multiple_of": 0,
+      "image": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "ImageResize+",
+    "_meta": {
+      "title": "🔧 Image Resize"
+    }
+  },
+  "17": {
+    "inputs": {
+      "filename_prefix": "",
+      "images": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}

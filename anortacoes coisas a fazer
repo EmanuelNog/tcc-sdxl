@@ -1,0 +1,35 @@
+relatorio
+resultados
+procedimento entrevista daline
+tratamento do dataset
+primeiro treinamento
+diagrama materiais e metodos
+
+resultados e pegar cada caixinha e explicar como foi feito
+
+captioning com anime
+
+
+----
+coisas que fiz
+
+primeiro teste
+realizado com o dataset das images baixadas no site, na resolucao original (408px) com bordas e texto, captioning com o waifu diffusion, palavra de ativacao "pecs art style"
+
+segundo teste
+dataset cropado e images com upscaling 4x, e cropado novamente na resolucao 1024, captioning com o waifu diffusion, palavra de ativacao "pecs art style"
+
+terceiro teste
+dataset cropado e images com upscaling 4x, e cropado novamente na resolucao 1024, captioning com o BLIP, palavra de ativacao "pecs art style"
+
+quarto teste
+dataset cropado e images com upscaling 4x, e cropado novamente na resolucao 1024, captioning com o BLIP, palavra de ativacao "sks art style"
+
+quinto teste
+dataset cropado e images com upscaling 4x, e cropado novamente na resolucao 1024, captioning com o BLIP, palavra de ativacao "sks art style", mas com treinamento do text encoder em 0
+
+sexto teste
+dataset cropado e images com upscaling 4x, e cropado novamente na resolucao 1024, captioning com o BLIP, correcao do captioning adicionando "white background" onde nescessario, sem palavra de ativacao, treinamento do text encoder em 0
+
+
+
